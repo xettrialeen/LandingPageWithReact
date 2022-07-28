@@ -1,0 +1,111 @@
+@import "../abstracts/abstract__helpers";
+@import "../base/base__helpers";
+
+.contact {
+  position: absolute;
+  bottom: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  @include flex-row;
+  justify-content: center;
+  padding-bottom: 156px;
+  .contact-wrapper {
+    width: 1172px;
+
+    background: #9378dc;
+    box-shadow: 5px 35px 70px rgba(50, 20, 132, 0.15);
+
+    .contact-header {
+      padding-top: 94px;
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      width: 100%;
+
+      align-items: center;
+
+      h2 {
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 50px;
+        /* identical to box height, or 139% */
+
+        text-align: center;
+        letter-spacing: 0.3px;
+
+        color: #ffffff;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 26px;
+
+        text-align: center;
+        letter-spacing: 0.2px;
+
+        color: #ffffff;
+        margin-top: 28px;
+        margin-bottom: 60px;
+      }
+      h2,
+      p {
+        width: 521px;
+        text-align: center;
+      }
+    }
+
+    button {
+      margin-bottom: 96px;
+      cursor: pointer;
+      padding-top: 21px;
+      padding-bottom: 19px;
+      padding-left: 15px;
+      padding-right: 15px;
+      display: flex;
+      align-items: center;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 20px;
+      /* identical to box height */
+
+      text-transform: uppercase;
+      color: $white;
+      background-color: transparent;
+      outline: none;
+      border: none;
+      position: relative;
+      //
+      height: 60px;
+      span {
+        margin-left: 11.88px;
+      }
+      &::after {
+        position: absolute;
+        width: (154px /3.8);
+        left: 0px;
+        padding-top: 42px;
+        padding-bottom: 19px;
+        padding-left: 15px;
+        padding-right: 15px;
+        outline: 1px solid white;
+        content: "";
+        transition: width 0.3s ease-in-out;
+        -webkit-transition: width 0.3s ease-in-out;
+        -moz-transition: width 0.3s ease-in-out;
+        -ms-transition: width 0.3s ease-in-out;
+        -o-transition: width 0.3s ease-in-out;
+      }
+
+      &:hover {
+        &::after {
+          width: 154px;
+        }
+      }
+    }
+  }
+}

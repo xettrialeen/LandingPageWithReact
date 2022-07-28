@@ -11,6 +11,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -783,9 +789,12 @@ header nav .navbar-wrapper .navbar-menu ul li {
   line-height: 20px;
   /* identical to box height */
   text-align: right;
-  color: #ffffff;
   margin-right: 40px;
   cursor: pointer;
+}
+header nav .navbar-wrapper .navbar-menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 header .hero-section {
   display: flex;
@@ -3598,8 +3607,1546 @@ table {
   mix-blend-mode: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* It's just a border to show the element's size. */
+  font-family: "Montserrat", sans-serif;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  animation: smoothscroll1 1s;
+  -webkit-animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  -webkit-animation-name: smoothscroll2;
+          animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border: 4px solid #ffffff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skeleton {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  border: none;
+}
+
+.skeleton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: var(--display);
+  z-index: 100;
+  background-color: #ffffff;
+  border: none;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  display: var(--display);
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  background-image: linear-gradient(to left, transparent, #e7e7e7, transparent);
+  animation: loading 1.5s infinite;
+  -webkit-animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* It's just a border to show the element's size. */
+  font-family: "Montserrat", sans-serif;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  animation: smoothscroll1 1s;
+  -webkit-animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  -webkit-animation-name: smoothscroll2;
+          animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 150px;
+  justify-content: center;
+}
+.testimonials .testimonials-wrapper {
+  width: 992px;
+}
+.testimonials .testimonials-wrapper .testimonials-header {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 70px;
+  align-items: center;
+}
+.testimonials .testimonials-wrapper .testimonials-header h2 {
+  margin-bottom: 20px;
+}
+.testimonials .testimonials-wrapper .testimonials-header h2,
+.testimonials .testimonials-wrapper .testimonials-header p {
+  text-align: center;
+}
+.testimonials .testimonials-wrapper .testimonials-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .testimonials-wrapper .testimonials-body .line {
+  width: 1px;
+  height: 258px;
+  background-color: #838383;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  border: 1px solid #979797;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card {
+  width: 431px;
+  height: 288px;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card .card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card .card-header img {
+  width: 131px;
+  height: 128px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 30px;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card .card-header .card-header-title h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card .card-header .card-header-title p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+  color: #838383;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card .card-header .card-header-title .reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 109px;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card .card-body {
+  padding-top: 30px;
+}
+.testimonials .testimonials-wrapper .testimonials-body .card .card-body p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  /* or 162% */
+  letter-spacing: 0.2px;
+  color: #838383;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* It's just a border to show the element's size. */
+  font-family: "Montserrat", sans-serif;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  animation: smoothscroll1 1s;
+  -webkit-animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  -webkit-animation-name: smoothscroll2;
+          animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border: 4px solid #ffffff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skeleton {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  border: none;
+}
+
+.skeleton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: var(--display);
+  z-index: 100;
+  background-color: #ffffff;
+  border: none;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  display: var(--display);
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  background-image: linear-gradient(to left, transparent, #e7e7e7, transparent);
+  animation: loading 1.5s infinite;
+  -webkit-animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* It's just a border to show the element's size. */
+  font-family: "Montserrat", sans-serif;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  animation: smoothscroll1 1s;
+  -webkit-animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  -webkit-animation-name: smoothscroll2;
+          animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.contact {
+  position: absolute;
+  bottom: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 156px;
+}
+.contact .contact-wrapper {
+  width: 1172px;
+  background: #9378dc;
+  box-shadow: 5px 35px 70px rgba(50, 20, 132, 0.15);
+}
+.contact .contact-wrapper .contact-header {
+  padding-top: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+  align-items: center;
+}
+.contact .contact-wrapper .contact-header h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 50px;
+  /* identical to box height, or 139% */
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+}
+.contact .contact-wrapper .contact-header p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin-top: 28px;
+  margin-bottom: 60px;
+}
+.contact .contact-wrapper .contact-header h2,
+.contact .contact-wrapper .contact-header p {
+  width: 521px;
+  text-align: center;
+}
+.contact .contact-wrapper button {
+  margin-bottom: 96px;
+  cursor: pointer;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 20px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  position: relative;
+  height: 60px;
+}
+.contact .contact-wrapper button span {
+  margin-left: 11.88px;
+}
+.contact .contact-wrapper button::after {
+  position: absolute;
+  width: 40.5263157895px;
+  left: 0px;
+  padding-top: 42px;
+  padding-bottom: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid white;
+  content: "";
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
+  -moz-transition: width 0.3s ease-in-out;
+  -ms-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+}
+.contact .contact-wrapper button:hover::after {
+  width: 154px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* It's just a border to show the element's size. */
+  font-family: "Montserrat", sans-serif;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  animation: smoothscroll1 1s;
+  -webkit-animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  -webkit-animation-name: smoothscroll2;
+          animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@-webkit-keyframes rotate-forever {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-forever {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: rotate-forever;
+  animation-name: rotate-forever;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  height: 30px;
+  width: 30px;
+  border: 4px solid #ffffff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skeleton {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+  border: none;
+}
+
+.skeleton::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: var(--display);
+  z-index: 100;
+  background-color: #ffffff;
+  border: none;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  display: var(--display);
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  background-image: linear-gradient(to left, transparent, #e7e7e7, transparent);
+  animation: loading 1.5s infinite;
+  -webkit-animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  /* It's just a border to show the element's size. */
+  font-family: "Montserrat", sans-serif;
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+
+* input::-webkit-outer-spin-button,
+* input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes smoothscroll1 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+@keyframes smoothscroll2 {
+  from, to {
+    scroll-behavior: smooth;
+  }
+}
+html {
+  animation: smoothscroll1 1s;
+  -webkit-animation: smoothscroll1 1s;
+}
+
+html:focus-within {
+  -webkit-animation-name: smoothscroll2;
+          animation-name: smoothscroll2;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+footer {
+  width: 100%;
+  height: 869px;
+  background: #7658c9;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  color: #fff;
+}
+
 .App {
   background: #fcfcff;
+  position: relative;
 }
 
 .title {

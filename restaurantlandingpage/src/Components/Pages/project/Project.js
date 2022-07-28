@@ -2,7 +2,7 @@ import React from "react";
 
 const Project = () => {
   return (
-    <div className="project">
+    <div id="portfolio" className="project">
       <div className="project-wrapper">
         <div className="project-header title">
           <h2>Our Project we work previously</h2>

@@ -8,7 +8,7 @@ import HaveProject from "./HaveProject";
 
 const Header = () => {
   return (
-    <header style={{ backgroundImage: `url(/assets/background.svg) ` }}>
+    <header id="home" style={{ backgroundImage: `url(/assets/background.svg) ` }}>
       {/* Calling the NavBar component. */}
       <NavBar />
       <HeroSection />

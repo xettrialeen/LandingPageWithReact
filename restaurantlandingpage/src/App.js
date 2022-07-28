@@ -5,6 +5,10 @@ import Services from "./Components/Pages/services/Services";
 import AboutUs from "./Components/Pages/about/About";
 import Project from "./Components/Pages/project/Project";
 import Team from "./Components/Pages/team/Team";
+import Testimonials from "./Components/Pages/testimonials/Testimonials";
+import Contact from "./Components/Pages/contact/Contact";
+import Footer from "./Components/Pages/footer/Footer";
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +18,9 @@ function App() {
       <AboutUs />
       <Project />
       <Team />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   );
 }
