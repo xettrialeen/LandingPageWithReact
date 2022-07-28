@@ -1,0 +1,132 @@
+@import "../abstracts/abstract__helpers";
+@import "../base/base__helpers";
+
+.aboutus {
+  @include flex-row;
+  justify-content: center;
+  padding-bottom: 150.5px;
+
+  width: 100%;
+  .aboutus-wrapper {
+    width: 1170px;
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      width: 501px;
+      height: 551px;
+      position: relative;
+
+      .miscelleanous {
+        position: absolute;
+        width: 289px;
+        height: 230px;
+        mix-blend-mode: normal;
+        opacity: 0.4;
+        border: 1px solid #8c69e8;
+        transform: matrix(0, 1, 1, 0, 0, 0);
+        top: 28px;
+        left: -30px;
+        -webkit-transform: matrix(0, 1, 1, 0, 0, 0);
+        -moz-transform: matrix(0, 1, 1, 0, 0, 0);
+        -ms-transform: matrix(0, 1, 1, 0, 0, 0);
+        -o-transform: matrix(0, 1, 1, 0, 0, 0);
+
+        .icons {
+          position: absolute;
+          top: 40px;
+          right: -29px;
+          width: 62px;
+          height: 62px;
+          @include radius(50%);
+          background: #8c69e8;
+          transform: matrix(0, 1, 1, 0, 0, 0);
+          -webkit-transform: matrix(0, 1, 1, 0, 0, 0);
+          -moz-transform: matrix(0, 1, 1, 0, 0, 0);
+          -ms-transform: matrix(0, 1, 1, 0, 0, 0);
+          -o-transform: matrix(0, 1, 1, 0, 0, 0);
+        }
+      }
+      img {
+        width: 430px;
+        height: 500px;
+        object-fit: cover;
+        margin-left: 70px;
+        margin-top: 50px;
+        position: absolute;
+      }
+      .icon {
+        position: absolute;
+        bottom: 250px;
+        left: 56px;
+      }
+    }
+    .right {
+      width: 500px;
+      @include flex-colum;
+
+      h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.25rem;
+        line-height: 50px;
+        /* or 139% */
+
+        letter-spacing: 0.3px;
+
+        color: #7658c9;
+        margin-bottom: 20px;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 26px;
+        /* or 162% */
+
+        letter-spacing: 0.2px;
+
+        color: #838383;
+        margin-bottom: 50px;
+      }
+      .progress {
+        @include flex-row;
+        align-items: center;
+        justify-content: space-between;
+        width: 405px;
+
+        .tasks {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 45px;
+          /* identical to box height, or 125% */
+
+          text-align: center;
+          letter-spacing: 0.3px;
+
+          @include flex-colum;
+          span {
+            &:nth-child(1) {
+              font-size: 2.25rem;
+              color: #00cef9;
+              text-align: left;
+            }
+            &:nth-child(2) {
+            text-align: left;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 26px;
+              /* or 162% */
+
+              letter-spacing: 0.2px;
+
+              color: #838383;
+            }
+          }
+        }
+      }
+    }
+  }
+}

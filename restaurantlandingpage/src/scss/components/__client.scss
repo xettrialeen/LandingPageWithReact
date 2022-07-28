@@ -1,0 +1,15 @@
+@import "../abstracts/abstract__helpers";
+@import "../base/base__helpers";
+
+.client {
+  @include flex-row;
+  justify-content: center;
+  padding-top: 79px;
+  padding-bottom: 100px;
+  width: 100%;
+  &-wrapper {
+    @include flex-row;
+    min-width: 927px;
+    justify-content: space-between;
+  }
+}

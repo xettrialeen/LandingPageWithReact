@@ -1,0 +1,69 @@
+@import "../abstracts/abstract__helpers";
+@import "../base/base__helpers";
+.project {
+  @include flex-row;
+  justify-content: center;
+padding-bottom: 150px;
+  .project-wrapper {
+    width: 1030px;
+    .project-body {
+        @include flex-row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      .card {
+        margin-bottom: 60px;
+        background-color: #ffffff;
+        position: relative;
+        width: 500px;
+        height: 532px;
+        .card-bg {
+          width: 100%;
+          height: 345px;
+          object-fit: cover;
+        }
+        .profile {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          img {
+            width: 100%;
+            height: 100%;
+            @include radius(50%);
+            object-fit: cover;
+            border: 6px solid #ffffff;
+          }
+          position: absolute;
+          bottom: 140px;
+          right: 40px;
+        }
+
+        .card-content {
+          padding-left: 20px;
+          padding-right: 20px;
+          h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 34px;
+            padding-top: 40px;
+            padding-bottom: 15px;
+            letter-spacing: 0.5px;
+
+            color: #222222;
+          }
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 26px;
+
+            letter-spacing: 0.2px;
+
+            color: #838383;
+          }
+        }
+      }
+    }
+  }
+}
